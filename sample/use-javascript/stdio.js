@@ -1,10 +1,14 @@
 'use strict';
 
 const main = (arg) => {
+  //入力
+  //環境によって?改行コードが'\r\n'と'\n'になる。
   const input = arg.trim().split(/\r?\n/);
   let intX, intY, strZ;
   [intX, intY] = input[0].split(' ').map((str) => parseInt(str, 10));
   strZ = input[1];
+
+  //出力
   console.log(intX, intY, strZ);
 };
 
