@@ -2,7 +2,7 @@
 
 const main = (arg) => {
   //入力
-  //環境によって?改行コードが'\r\n'と'\n'になる。
+  //環境によって?改行コードが'\r\n'か'\n'になる。
   const input = arg.trim().split(/\r?\n/);
   let intX, intY, strZ;
   [intX, intY] = input[0].split(' ').map((str) => parseInt(str, 10));
