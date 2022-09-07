@@ -1,13 +1,13 @@
+//A-MiddleLetter
 'use strict';
 
 const main = (arg) => {
   //入力
-  //環境によって?改行コードが'\r\n'か'\n'になる。
-  const input = arg.trim().split(/\r?\n/);
-  let S = input[0];
+  const S = arg.trim();
 
   //出力
-  console.log(S.charAt(Math.floor(S.length + 1) / 2 - 1));
+  let n = Math.floor((S.length + 1) / 2) - 1;
+  console.log(S[n]);
 };
 
 //提出用
