@@ -3,8 +3,8 @@
 
 const main = (arg) => {
   //入力
-  //環境によって?改行コードが'\r\n'か'\n'になる。
   const [x, y, n] = arg.trim().split(' ');
+
   if (x * 3 <= y) {
     console.log(x * n);
   } else {

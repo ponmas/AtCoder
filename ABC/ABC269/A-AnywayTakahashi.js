@@ -7,9 +7,11 @@ const main = (arg) => {
   const input = arg.trim().split(/\r?\n/);
   const data = input[0].split(' ').map((str) => parseInt(str, 10));
 
+  console.log(data[0] + data[1]);
+  console.log(data[2] - data[3]);
   //出力
 
-  console.log(parseInt((data[0] + data[1]) * (data[2] - data[3])));
+  console.log((data[0] + data[1]) * (data[2] - data[3]));
   console.log('Takahashi');
 };
 
